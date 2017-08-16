@@ -3,10 +3,15 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #B0C4DE;
+    background-color: #E8E8E8;
      position: relative;
     z-index: 1;
 }
+#co1 {
+    height: 340px;
+    position: absolute;
+}
+
 #info{
   font-family: tahoma;  
   text-align: center;
@@ -38,47 +43,76 @@ color: #D3D3D3;
   }
 #drdown {
     float: right;
+    right: 0px;
+    
 }
 
-#top1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: rgba (105, 105, 105, 0.5);
+
+
+#Festivals{
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif: ;
+   
     color: azure;
     position: absolute;
     height: 340px;
     width: 500px;
     z-index: 1;
+    left: 0px;
+  
+    
+}
+
+#top1 {
+    
+    
+    
+    position: absolute;
+    height: 340px;
+    width: 100%;
+    z-index: 1;
     right: 0px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    
     -moz-transition: 0.8s 0.1s ease; 
 -webkit-transition: 0.8s 0.1s ease;  
 -ms-transition: 0.8s 0.1s ease;  
 -o-transition: 0.8s 0.1s ease;  
 transition: 0.8s 0.1s ease; 
+     padding: 0; !impotant;
+    margin: 0; !impotant;
+    left: 0px; !impotant;
    
     
 }
 #top1:hover {
+     
+
     
+}
+#table100 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif: ;
+    color: azure;
+    height: 340px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba (105, 105, 105, 0.5);
+    -moz-transition: 0.8s 0.1s ease; 
+-webkit-transition: 0.8s 0.1s ease;  
+-ms-transition: 0.8s 0.1s ease;  
+-o-transition: 0.8s 0.1s ease;  
+transition: 0.8s 0.1s ease; 
+    
+    
+}
+#table100:hover {
+     color: #D1EEEE;
     background: rgba( 28, 28, 28, 0.9);
-    
 }
 
-
-.clarity {
-opacity:0.5;
-filter:alpha(opacity=50);   
+.col-md-4 {
+    padding: 0; !impotant;
+    margin: 0; !impotant;
+    left: 0px; !impotant;
 }
-
-.clarity:hover {
--moz-transition: all 0.4s; 
--webkit-transition: all 0.4s;  
--ms-transition: all 0.4s;  
--o-transition: all 0.4s;  
-transition: all 0.4s; 
-opacity:1;
-    filter:alpha(opacity=100);}
 
 .table {
    height: 280px;
@@ -96,106 +130,3 @@ opacity:1;
   -o-transition: all 0.5s ease;;
   transition: all 0.5s ease;
 }
-/*Плеєр(розібратись)*/
-
-@font-face {
-    font-family:"SSStandard";
-  src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ss-standard.woff') format('woff');
-  font-weight:normal;
-  font-style:normal;
-    
-}
-.ss-icon,.ss-icon.ss-standard {
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    white-space: nowrap;
-    font-feature-settings: "liga","dlig";
-}
-.ss-icon,.ss-icon.ss-standard {
-    font-family: "SSStandard";
-}
-* { box-sizing: border-box; }
-figure#audioplayer { 
-  border: 1px solid #000;
-  background: #333;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/dark_wall.png);
-    opacity: 0,9;
-  overflow: hidden;
-  width: 52rem;
-  padding: .4rem;
-  margin: 0 auto;
-    position: absolute;
-    z-index: 1;
-}
-figure#audioplayer audio { width: 0; height: 0; }
-figure#audioplayer figcaption { 
-  width: 41.5rem; font-size: 0;
-  margin: .45rem; background: #000;
-
-  float: left; 
-  border: 1px solid #555;
-   
-}
-figure#audioplayer figcaption div { 
-  background: #000;
-  color: #fff;
-  padding: .8rem;
-  font-family: Avenir, Helvetica, sans-serif;
-  text-transform: uppercase; font-size: .8rem;
-  display: inline-block;
-}
-figure#audioplayer figcaption div span { 
-  display: block;
-  font-size: 1.3rem;
-  text-indent: 1rem; 
-}
-div#album { 
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
-  width: 100%; 
-}
-div#time { 
-  width: 7.55rem;
-  border-left: 1px solid #555; 
-}
-input#volumeSlider { -webkit-appearance: slider-vertical;  }
-figure#audioplayer button { 
-  width: 5rem; height: 3rem; 
-  background: #000; color: #fff; 
-  border: none; 
-}
-#playback { clear: both; }
-div#fader { display: inline-block; }
-#playback progress { 
-  margin-left: 1rem; 
-  width: 20rem; height: 12px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #888;
-  border: none;
-  color: hsl(44,100%,44%);
-}
-progress::-webkit-progress-bar, progress::-moz-progress-bar, progress::progress-bar {
-  background: hsl(44,100%,44%);
-}
-progress::-webkit-progress-value { background: hsl(44,100%,44%); }
-progress::-moz-progress-bar {
-background-color: hsl(44,100%,44%);
-}
-@media screen and (max-width: 400px) {
-  div#time { display: block !important; border-top: 1px solid #555; width: 100%; }
-  figure#audioplayer { width: 100%; padding: .2rem; }
-  figure#audioplayer figcaption div { padding: .4rem; }
-}
-@media screen and (max-width: 400px) {
-figure#audioplayer figcaption { width: 16rem; }
-#playback progress { width: 220px; } 
-}
-@media screen and (max-width: 400px) {
-figure#audioplayer figcaption { width: 14rem; }
-}
-
-
-
