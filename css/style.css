@@ -7,16 +7,94 @@ body {
      position: relative;
     z-index: 1;
 }
-#co1 {
-    height: 340px;
-    position: absolute;
-}
+
 
 #info{
   font-family: tahoma;  
   text-align: center;
 color: #D3D3D3;
     float: center;
+}
+#Event_1 {
+    cursor: pointer;
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    
+    
+    position: absolute;
+    z-index: 6;
+    top: 240px;
+    left: 2px;
+}
+#Event_1:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+    
+   
+}
+
+#Event_2{
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    position: absolute;
+    z-index: 6;
+    top: 100px;
+    left: 10px;
+}
+#Event_2:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#Event_3{
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    position: absolute;
+    z-index: 6;
+    top: 10px;
+    left: 150px;
+}
+#Event_3:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#Event_4{
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    position: absolute;
+    z-index: 6;
+    top: 10px;
+    left: 270px;
+}
+#Event_4:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#Event_5{
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    position: absolute;
+    z-index: 6;
+    top: -25px;
+    left: 390px;
+}
+#Event_5:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 #carousel{
     margin-top: 55px;
@@ -48,7 +126,6 @@ color: #D3D3D3;
 }
 
 
-
 #Festivals{
      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif: ;
    
@@ -60,6 +137,24 @@ color: #D3D3D3;
     left: 0px;
   
     
+}
+#Fest {
+    position: absolute;
+    z-index: 4;
+    left: 0px;
+    margin-top: -0px;
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+}
+#Fest:hover {
+    
+    
+    
+    
+  
 }
 
 #top1 {
