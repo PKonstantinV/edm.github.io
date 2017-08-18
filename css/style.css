@@ -15,7 +15,15 @@ body {
 color: #D3D3D3;
     float: center;
 }
+/*Логотипи фестевалів*/
+
 #Event_1 {
+    -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
     cursor: pointer;
     -webkit-transition: all 0.7s ease;;
   -moz-transition: all 0.7s ease;;
@@ -29,44 +37,88 @@ color: #D3D3D3;
     left: 2px;
 }
 #Event_1:hover {
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
     -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+    -webkit-animation-iteration-count: 1;
+   animation-iteration-count: 1;
     
    
 }
 
 #Event_2{
+     -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
     -webkit-transition: all 0.7s ease;;
   -moz-transition: all 0.7s ease;;
   -o-transition: all 0.7s ease;;
   transition: all 0.7s ease;
     position: absolute;
     z-index: 6;
-    top: 100px;
-    left: 10px;
+    top: 110px;
+    left: 15px;
 }
 #Event_2:hover {
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
     -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 #Event_3{
+     -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
     -webkit-transition: all 0.7s ease;;
   -moz-transition: all 0.7s ease;;
   -o-transition: all 0.7s ease;;
   transition: all 0.7s ease;
     position: absolute;
     z-index: 6;
-    top: 10px;
-    left: 150px;
+    top: 15px;
+    left: 140px;
 }
 #Event_3:hover {
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
     -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 #Event_4{
+     -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
     -webkit-transition: all 0.7s ease;;
   -moz-transition: all 0.7s ease;;
   -o-transition: all 0.7s ease;;
@@ -77,11 +129,23 @@ color: #D3D3D3;
     left: 270px;
 }
 #Event_4:hover {
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
     -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 #Event_5{
+     -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
     -webkit-transition: all 0.7s ease;;
   -moz-transition: all 0.7s ease;;
   -o-transition: all 0.7s ease;;
@@ -92,14 +156,27 @@ color: #D3D3D3;
     left: 390px;
 }
 #Event_5:hover {
+    -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
     -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+
 #carousel{
-    margin-top: 55px;
+    margin-top: 54px;
     position: relative;
     
+    
+}
+#carousel_1{
+    margin-top: 54px;
+    position: relative;
 }
 .navbar-inverse {
   background-color: #222;
@@ -198,6 +275,9 @@ transition: 0.8s 0.1s ease;
     
     
 }
+#stopSong {
+    cursor: po
+}
 #table100:hover {
      color: #D1EEEE;
     background: rgba( 28, 28, 28, 0.9);
@@ -208,7 +288,20 @@ transition: 0.8s 0.1s ease;
     margin: 0; !impotant;
     left: 0px; !impotant;
 }
-
+#spause {
+    -webkit-transition: all 0.7s ease;;
+  -moz-transition: all 0.7s ease;;
+  -o-transition: all 0.7s ease;;
+  transition: all 0.7s ease;
+    top: auto;
+    cursor: pointer;
+}
+#spause:hover {
+    -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+    
+}
 .table {
    height: 280px;
     width: 500px;
@@ -224,4 +317,31 @@ transition: 0.8s 0.1s ease;
   -moz-transition: all 0.5s ease;;
   -o-transition: all 0.5s ease;;
   transition: all 0.5s ease;
+}
+#zoom1:hover {
+  border-radius: 70%;
+}
+#zoom1{
+     cursor: pointer; 
+    position: relative;
+   -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+#zoom2:hover {
+  border-radius: 70%;
+}
+#zoom2{
+     cursor: pointer; 
+    position: relative;
+   -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+
+#player1 {
+    opacity: 0.7;
+    background-color: black;
 }

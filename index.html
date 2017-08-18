@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>EDM Music</title>
+    <link rel="shortcut icon" href="image/logo/avt.gif" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -21,50 +22,29 @@
   <body>
        <div class="navbar navbar-inverse navbar-fixed-top" id="head">
            
-                  <a class="navbar-brand">EDM Music</a>
-                  <div class="collapse navbar-collapse ">
+                  <a class="navbar-brand"><font  color="#FFFAFA">EDM Music</font></a>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse navbar-collapse" data-target="responcive_menu"></button>
+                  
+                  <div class="collapse navbar-collapse " id="responcive_menu">
                       <ul class="nav navbar-nav">
                           <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Part 1 <b class="caret"></b> </a>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><font  color="red"></font>Festivals<b class="caret"></b> </a>
                               <ul class="navbar-inverse dropdown-menu ">
-                                   <li><a href="#">Part 1</a></li>
+                                   <li><a href="#">Ultra</a></li>
                                    <li role="separator" class="divider"></li>
-                                   <li><a href="#">Part 2</a></li>
+                                   <li><a href="#">Tomorrowland</a></li>
                                    <li role="separator" class="divider"></li>
-                                   <li><a href="#">Part 3</a></li>
+                                   <li><a href="#">Dimensions</a></li>
+                                    <li role="separator" class="divider"></li>
+                                   <li><a href="#">Awakenings</a></li>
                                        
                               </ul>
                           </li>
-                       <li><a href="#">Part 2</a></li>
-                       <li><a href="#">Part 3</a></li>
-                       <li><a href="#">Part 4</a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
-                       <li><a href="#"></a></li>
+                       <li><a href="#">Music</a></li>
+                       <li><a href="#">Fotos</a></li>
+                       <li><a href="#">Video</a></li>
+                       
+                   
                     
                        
                        <!--Меню вибіру мови-->
@@ -85,9 +65,9 @@
                  </div>
             
         </div>
-        <img src="image/43.png" id="Fest">
+        <img src="image/44.png" id="Fest">
         <div class="logoimg">
-            <a href="html"><img src="image/logo/UF.png" id="Event_1"></a>
+            <a href="ultraF.html"><img src="image/logo/UF.png" id="Event_1"></a>
             <img src="image/logo/TMRland.png" id="Event_2">
             <img src="image/logo/sdf_logo_en.png" id="Event_3">
             <img src="image/logo/Awakenings-Festival-20161.png" id="Event_4">
@@ -115,38 +95,52 @@
                     <table class="table table-inverse"  >
                           <thead>
                             <tr>
-                              <th>TOP 100</th>
+                              <th>TOP 10</th>
                               <th>Dj</th>
                               <th>Sound</th>
                               <th>Years</th>
                             </tr>
                           </thead>
+                          <audio preload="auto" id="player1" src="audio/10_martin_garrix_animals_myzuka.me.mp3"></audio>
+                          <audio preload="auto" id="player2"  src="audio/videoplayback%20(2).m4a"></audio>
+                          <audio preload="auto" id="player3"  src="audio/videoplayback%20(3).m4a"></audio>
+                          <audio preload="auto" id="player4"  src="audio/Kid%20Cudi%20-%20Pursuit%20of%20Happiness%20(Steve%20Aoki%20Dance%20Remix).mp3"></audio>
+<!--<div>
+	<button onclick="document.getElementById('player1').play()">Воспроизведение</button>
+	<button onclick="document.getElementById('player1').pause()">Пауза</button>
+	<button onclick="document.getElementById('player1').volume+=0.1">Громкость +</button>
+	<button onclick="document.getElementById('player1').volume-=0.1">Громкость -</button>
+</div>--> 
                           <tbody>
                             <tr>
-                              <th scope="row"><img src="image/imgonline-com-ua-PicOnPic-stH1eNq5ia35h.png" alt="" class="round" id="zoom" onclick="changeImage(),changePlayerImage()"></th>
-                              <td class="col-md-2">Martin Garix</td>
+                              <th scope="row"><img src="image/imgonline-com-ua-PicOnPic-stH1eNq5ia35h.png" alt="" class="round" id="zoom" onclick="changePlayerImage(), changeImage(),document.getElementById('player1').play()">
+                              <img hidden="true" src="image/MGpause.png" alt="" ></th>
+                              <td class="col-md-2">Martin Garix <br>
+                              <img src="image/logo/sPause.png" id="spause" onclick="changePlayerImage2(), document.getElementById('player1').pause()">  </td>
                               <td class="col-md-6">Martin Garrix - Animals</td>
                               <td class="col-md-4">2013</td>
-                              
+                            </tr>
+                            <tr>
+                                
                             </tr>
                             <br>
                             <tr>
-                              <th scope="row"><a href=""><img src="image/imgonline-com-ua-PicOnPic-bnXNTMJqRKdM.png" alt="" class="round" id="zoom"></a></th>
-                              <td>LMFAO</td>
+                              <th scope="row"><img src="image/imgonline-com-ua-PicOnPic-bnXNTMJqRKdM.png" alt="" class="round" id="zoom1" onclick="changePlayerImage3(), document.getElementById('player2').play()"></th>
+                              <td>LMFAO<img src="image/logo/sPause.png" id="spause" onclick="changePlayerImage4(), document.getElementById('player2').pause()"></td>
                               <td>LMFAO-Champagne Showers</td>
                               <td>2011</td>
                             </tr>
                             <tr>
-                              <th scope="row">3</th>
-                              <td>Armin van Buuren</td>
+                              <th scope="row"><img src="image/imgonline-com-ua-PicOnPic-BnohZ1dW2epHd.png" alt="" class="round" id="zoom2" onclick=" document.getElementById('player3').play()"></th>
+                              <td>Armin van Buuren<img src="image/logo/sPause.png" id="spause" onclick=" document.getElementById('player3').pause()"></td>
                               <td>Armin van Buuren & Garibay - I Need You (feat. Olaf Blackwood)</td>
-                              <td>@twitter</td>
+                              <td>2017</td>
                             </tr>
                             <tr>
-                              <th scope="row">3</th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
+                              <th scope="row"><img src="image/imgonline-com-ua-PicOnPic-C8PZH69Ijd7hc.png" alt="" class="round" id="zoom2" onclick=" document.getElementById('player4').play()"></th>
+                              <td>Kid Cudi<img src="image/logo/sPause.png" id="spause" onclick=" document.getElementById('player4').pause()"></td>
+                              <td>Pursuit of Happiness (Steve Aoki Dance Remix)</td>
+                              <td>2008</td>
                             </tr>
                             <tr>
                               <th scope="row">3</th>
@@ -171,7 +165,7 @@
                 
             
         </div>
-         
+        
         <!--Карусель слайдер-->
         <div id="carousel" class="carousel slide">
             <!--Індекатори слайдів-->
@@ -208,9 +202,7 @@
                 </div>                
             </div>
             <!--Стрілки переключення слайдів"-->
-            <a href="#carousel" class="left carousel-control" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
+            
             <a href="#carousel"class="right carousel-control" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
@@ -228,5 +220,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
     <script src="js/js.js"></script>
+    <script src="/audiojs/audio.min.js"></script>
   </body>
 </html>

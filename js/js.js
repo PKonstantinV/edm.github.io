@@ -8,97 +8,71 @@ function changeImage() {
     image.src = "image/l2.jpg";   
   }  
 }
+/*player img change*/
+
 function changePlayerImage() {
   var image = document.getElementById("zoom");
   
   if (image.src.match("imgonline-com-ua-PicOnPic-stH1eNq5ia35h")) {
-    image.src = "image/MGpause.png";
+    image.src = "image/MGC.jpg";
   } 
     else { 
     image.src = "image/imgonline-com-ua-PicOnPic-stH1eNq5ia35h.png";   
   }  
 }
-
-
-function player() {
-  if (audioTrack.paused) {
-	setText(this, "Pause");
-	audioTrack.play();
-	} else {
-	setText(this,"Play");
-	audioTrack.pause();	
-	}
+function changePlayerImage2() {
+  var image = document.getElementById("zoom");
+  
+  if (image.src.match("MGC")) {
+    image.src = "image/imgonline-com-ua-PicOnPic-stH1eNq5ia35h.png";
+  } 
+    else { 
+    image.src = "image/imgonline-com-ua-PicOnPic-stH1eNq5ia35h.png";   
+  }  
+}function changePlayerImage3() {
+  var image = document.getElementById("zoom1");
+  
+  if (image.src.match("imgonline-com-ua-PicOnPic-bnXNTMJqRKdM")) {
+    image.src = "image/LFM.jpg";
+  } 
+    else { 
+    image.src = "image/imgonline-com-ua-PicOnPic-bnXNTMJqRKdM.png";   
+  }  
+}
+function changePlayerImage4() {
+  var image = document.getElementById("zoom1");
+  
+  if (image.src.match("LFM")) {
+    image.src = "image/imgonline-com-ua-PicOnPic-bnXNTMJqRKdM.png";
+  } 
+    else { 
+    image.src = "image/imgonline-com-ua-PicOnPic-bnXNTMJqRKdM.png";   
+  }  
 }
 
-function setText(el,text) {
-	el.innerHTML = text;
+/*function changePlayerImage5() {
+  var image = document.getElementById("zoom2");
+  
+  if (image.src.match("imgonline-com-ua-PicOnPic-BnohZ1dW2epHd")) {
+    image.src = "image/images.jpg";
+  } 
+    else { 
+    image.src = "image/imgonline-com-ua-PicOnPic-BnohZ1dW2epHd.png";   
+  }  
 }
+function changePlayerImage6() {
+  var image = document.getElementById("zoom2");
+  
+  if (image.src.match("")) {
+    image.src = "";
+  } 
+    else { 
+    image.src = "";   
+  }  
+}*/
 
-function finish() {
-		audioTrack.currentTime = 0;
-		setText(playButton,"Play");
+var activeSong;
+function stopSong(){
+  activeSong.currentTime = 0;
+  activeSong.pause();
 }
-
-function updatePlayhead() { 
-	playhead.value = audioTrack.currentTime;
-	var s = parseInt(audioTrack.currentTime % 60);
-    var m = parseInt((audioTrack.currentTime / 60) % 60);
-    s = (s >= 10) ? s : "0" + s;
-    m = (m >= 10) ? m : "0" + m;
-    playbacktime.innerHTML = m + ':' + s ;
-    
-}
-
-function volumizer() {
-	if (audioTrack.volume == 0) { setText(muteButton,"volume"); }
-	else { setText(muteButton,"volumehigh"); }
-}
-
-function muter() {
-	if (audioTrack.volume == 0) {
-		audioTrack.volume = restoreValue;
-		volumeSlider.value = restoreValue;
-	} else {
-		audioTrack.volume = 0;
-		restoreValue = volumeSlider.value;
-		volumeSlider.value = 0;
-	}
-}
-
-function setAttributes(el, attrs) {
-	for(var key in attrs){
-		el.setAttribute(key, attrs[key]);
-	}
-}
-
-var audioPlayer = document.getElementById("audioplayer"),
-fader = document.getElementById("fader"),
-playback = document.getElementById("playback"),
-audioTrack = document.getElementById("audiotrack"),
-playbackTime = document.getElementById("playbacktime"),
-playButton = document.createElement("button"),
-muteButton = document.createElement("button"),
-playhead = document.createElement("progress")
-volumeSlider = document.createElement("input");
-setText(playButton, "Play");
-setText(muteButton, "volumehigh");
-setAttributes(playButton, { "type": "button", "class": "ss-icon" });
-setAttributes(muteButton, { "type": "button", "class": "ss-icon" });
-muteButton.style.display = "block";
-muteButton.style.margin = "0 auto";
-setAttributes(volumeSlider, { "type": "range", "min": "0", "max": "1", "step": "any", "value": "1", "orient": "vertical", "id": "volumeSlider" });
-
-var duration = audioTrack.duration;
-setAttributes(playhead, { "min": "0", "max": "100", "value": "0", "id": "playhead" });
-fader.appendChild(volumeSlider);
-fader.appendChild(muteButton);
-playback.appendChild(playButton);
-playback.appendChild(playhead);
-audioTrack.removeAttribute("controls");
-playButton.addEventListener("click", player, false);
-muteButton.addEventListener("click", muter, false);
-volumeSlider.addEventListener("input", function(){ audioTrack.volume = volumeSlider.value; }, false);
-audioTrack.addEventListener('volumechange', volumizer, false);
-audioTrack.addEventListener('playing', function(){ playhead.max = audioTrack.duration; }, false);
-audioTrack.addEventListener('timeupdate', updatePlayhead, false);
-audioTrack.addEventListener('ended', finish, false);
